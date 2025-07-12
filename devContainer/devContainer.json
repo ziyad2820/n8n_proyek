@@ -1,0 +1,11 @@
+{
+  "name": "N8n Development Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "enableNonRoot": "true"
+    }
+  },
+  "postCreateCommand": "npm install -g n8n"
+}
